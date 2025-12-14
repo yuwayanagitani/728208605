@@ -1,0 +1,21 @@
+{
+  "name": "anki-ai-splitter",
+  "version": "0.1.0",
+  "description": "Long “wall-of-text” answers are hard to review. This add-on uses an AI model to split one long Anki card into multiple shorter Q&A cards while keeping your original note intact.",
+  "auther": "Yuwa Yanagitani",
+  "author": "Yuwa Yanagitani",
+  "homepage": "https://github.com/yuwayanagitani/anki-ai-splitter",
+  "license": "MIT",
+  "min_anki_version": "23.10.0",
+  "max_anki_version": null,
+  "requirements": [],
+  "entry_point": "__init__.py",
+  "config_file": "config.json",
+  "tags": [
+    "anki",
+    "addon",
+    "ai",
+    "splitter"
+  ],
+  "notes": ""
+}
