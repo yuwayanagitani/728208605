@@ -1,0 +1,18 @@
+{
+  "01_question_field": "Front",
+  "02_answer_field": "Back",
+  "03_max_answer_chars": 220,
+  "04_output_language": "English",
+  "05_max_cards": 5,
+  "06_provider": "openai",
+  "07_openai_model": "gpt-4o-mini",
+  "08_openai_api_key_env": "OPENAI_API_KEY",
+  "09_openai_api_base": "https://api.openai.com/v1/chat/completions",
+  "10_gemini_model": "gemini-2.5-flash-lite",
+  "11_gemini_api_key_env": "GEMINI_API_KEY",
+  "12_gemini_api_base": "https://generativelanguage.googleapis.com/v1beta",
+  "13_temperature": 0.2,
+  "14_max_output_tokens": 1200,
+  "15_tag_for_new": "Split",
+  "16_tag_for_original": "LongAnswer"
+}
