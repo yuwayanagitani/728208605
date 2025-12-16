@@ -888,7 +888,7 @@ def split_long_answers_for_query() -> None:
 
                 new_tags = set(note.tags)
                 new_tags.add(tag_new)
-                new_tags.add(f"{tag_new}_{nid}")
+                new_tags.add(f"{tag_new}::{nid}")
                 new_note.tags = list(new_tags)
 
                 mw.col.add_note(new_note, deck_id)
@@ -1039,7 +1039,7 @@ def split_selected_notes_in_browser(browser: Browser) -> None:
 
                 new_tags = set(note.tags)
                 new_tags.add(tag_new)
-                new_tags.add(f"{tag_new}_{nid}")
+                new_tags.add(f"{tag_new}::{nid}")
                 new_note.tags = list(new_tags)
 
                 mw.col.add_note(new_note, deck_id)
@@ -1124,7 +1124,7 @@ def split_current_reviewer_note(reviewer) -> None:
         "Split THIS card's note using AI?\n\n"
         f"- Original note will NOT be deleted\n"
         f"- Tag added to original: {tag_orig}\n"
-        f"- New notes will get: {tag_new} (+ {tag_new}_{note.id})",
+        f"- New notes will get: {tag_new} (+ {tag_new}::{note.id})",
     )
     if ret != QMessageBox.StandardButton.Yes:
         return
@@ -1169,7 +1169,7 @@ def split_current_reviewer_note(reviewer) -> None:
 
             new_tags = set(note.tags or [])
             new_tags.add(tag_new)
-            new_tags.add(f"{tag_new}_{note.id}")
+            new_tags.add(f"{tag_new}::{note.id}")
             new_note.tags = list(new_tags)
 
             mw.col.add_note(new_note, deck_id)
